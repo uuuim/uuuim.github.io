@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的语音样本展示</title>
+    <style>
+        /* 这下面是让页面更好看的样式，不用改 */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #333; }
+        .sample {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        .sample-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        audio {
+            width: 300px;
+            margin-right: 20px;
+        }
+        .comparison {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .audio-item {
+            background: #f5f5f5;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+        .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>【你的项目标题，例如：我的语音增强实验】</h1>
+    <p><strong>作者：</strong>【你的名字】</p>
+    <p><strong>单位：</strong>【你的学校/机构】</p>
+    <p>【项目简介：用一两句话介绍你的语音样本是什么，例如：下面是原始语音和增强后的对比样本。】</p>
+
+    <!-- ========== 方式一：逐个展示样本（推荐） ========== -->
+    <h2>语音样本对比</h2>
+
+    <!-- 样本1 -->
+    <div class="sample">
+        <div class="sample-title">样本 1：【描述，如：男声_干净语音】</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">混合语音</div>
+                <audio controls src="audio/test_sample/sample1_1.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">目标语音语音</div>
+                <audio controls src="audio/test_sample/sample1_2.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">处理后语音1</div>
+                <audio controls src="audio/test_sample/sample1_3.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">处理后语音2</div>
+                <audio controls src="audio/test_sample/sample1_4.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">处理后语音3</div>
+                <audio controls src="audio/test_sample/sample1_5.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">处理后语音4</div>
+                <audio controls src="audio/test_sample/sample1_6.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h2>参考文献</h2>
+    <ul>
+        <li>【你的参考文献1】</li>
+        <li>【你的参考文献2】</li>
+    </ul>
+
+</body>
+</html>
