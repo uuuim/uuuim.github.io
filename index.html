@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的语音样本展示</title>
+    <style>
+        /* 这下面是让页面更好看的样式，不用改 */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #333; }
+        .sample {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        .sample-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        audio {
+            width: 300px;
+            margin-right: 20px;
+        }
+        .comparison {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .audio-item {
+            background: #f5f5f5;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+        .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>【MC-MSMamba: Multi-Cues and Multi-Scale State Space Model Fusion Network for Neuro-Oriented Target Speaker Extraction】</h1>
+    <p><strong>单位：</strong>【Anhui University】</p>
+    <p>【We evaluated the target speaker extraction performance of the proposed model, BASEN, IFENet and MSFNet on the MM_AAD dataset. The following presents six audio samples, each with a duration of 2 seconds, including the mixed speech, the target clean speech, and the extracted target speech obtained by each model.】</p>
+
+    <!-- ========== 方式一：逐个展示样本（推荐） ========== -->
+    <h2>Sample results on MM_AAD</h2>
+
+    <!-- Sample 1 -->
+    <div class="sample">
+        <div class="sample-title">Sample 1</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">mixed speech</div>
+                <audio controls src="samples/noisy_sample0.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">target clean speech</div>
+                <audio controls src="samples/clean_sample0.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">BASEN</div>
+                <audio controls src="samples/BASEN_sample0.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MSFNet</div>
+                <audio controls src="samples/MSF_sample0.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">IFENet</div>
+                <audio controls src="samples/IFE_sample0.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MC_MSMamba(ours)</div>
+                <audio controls src="samples/MC_sample0.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample 2 -->
+    <div class="sample">
+        <div class="sample-title">Sample 2</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">mixed speech</div>
+                <audio controls src="samples/noisy_sample1.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">target clean speech</div>
+                <audio controls src="samples/clean_sample1.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">BASEN</div>
+                <audio controls src="samples/BASEN_sample1.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MSFNet</div>
+                <audio controls src="samples/MSF_sample1.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">IFENet</div>
+                <audio controls src="samples/IFE_sample1.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MC_MSMamba(ours)</div>
+                <audio controls src="samples/MC_sample1.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample 3 -->
+    <div class="sample">
+        <div class="sample-title">Sample 3</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">mixed speech</div>
+                <audio controls src="samples/noisy_sample2.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">target clean speech</div>
+                <audio controls src="samples/clean_sample2.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">BASEN</div>
+                <audio controls src="samples/BASEN_sample2.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MSFNet</div>
+                <audio controls src="samples/MSF_sample2.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">IFENet</div>
+                <audio controls src="samples/IFE_sample2.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MC_MSMamba(ours)</div>
+                <audio controls src="samples/MC_sample2.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample 4 -->
+    <div class="sample">
+        <div class="sample-title">Sample 4</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">mixed speech</div>
+                <audio controls src="samples/noisy_sample3.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">target clean speech</div>
+                <audio controls src="samples/clean_sample3.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">BASEN</div>
+                <audio controls src="samples/BASEN_sample3.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MSFNet</div>
+                <audio controls src="samples/MSF_sample3.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">IFENet</div>
+                <audio controls src="samples/IFE_sample3.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MC_MSMamba(ours)</div>
+                <audio controls src="samples/MC_sample3.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample 5 -->
+    <div class="sample">
+        <div class="sample-title">Sample 5</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">mixed speech</div>
+                <audio controls src="samples/noisy_sample4.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">target clean speech</div>
+                <audio controls src="samples/clean_sample4.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">BASEN</div>
+                <audio controls src="samples/BASEN_sample4.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MSFNet</div>
+                <audio controls src="samples/MSF_sample4.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">IFENet</div>
+                <audio controls src="samples/IFE_sample4.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MC_MSMamba(ours)</div>
+                <audio controls src="samples/MC_sample4.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample 6 -->
+    <div class="sample">
+        <div class="sample-title">Sample 6</div>
+        <div class="comparison">
+            <div class="audio-item">
+                <div class="label">mixed speech</div>
+                <audio controls src="samples/noisy_sample5.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">target clean speech</div>
+                <audio controls src="samples/clean_sample5.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">BASEN</div>
+                <audio controls src="samples/BASEN_sample5.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MSFNet</div>
+                <audio controls src="samples/MSF_sample5.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">IFENet</div>
+                <audio controls src="samples/IFE_sample5.wav"></audio>
+            </div>
+            <div class="audio-item">
+                <div class="label">MC_MSMamba(ours)</div>
+                <audio controls src="samples/MC_sample0.wav"></audio>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+</body>
+</html>
